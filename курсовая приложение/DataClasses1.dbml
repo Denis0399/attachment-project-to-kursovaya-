@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="kursovaya" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-OFJ100G\SQLEXPRESS;Initial Catalog=kursovaya;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False" SettingsObjectName="курсовая_приложение.Properties.Settings" SettingsPropertyName="kursovayaConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.patients" Member="patients">
+    <Type Name="patients">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FIO" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="birthdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="admissiondate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="diagnosis" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="medicine" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.dischargedpatient" Member="dischargedpatient">
+    <Type Name="dischargedpatient">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FIO" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="birthdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="admissiondate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="dischargedate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="diagnosis" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="medicine" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.analysises" Member="analysises">
+    <Type Name="analysises">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FIO" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="diagnosis" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="analysis" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
